@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/impulse.css</file>
+        <file>qss/impulse_Clustering.css</file>
+        <file>qss/mainwindow.css</file>
+        <file>qss/impulse_separation.css</file>
+        <file>qss/view.css</file>
+        <file>qss/mywindow.css</file>
+        <file>qss/impulse_second_form.css</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InternalPulseWindow</class>
+ <widget class="QWidget" name="InternalPulseWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>InternalPulseWindow</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>30</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>4000</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>1</width>
+       <height>0</height>
+      </size>
+     </property>
+     <row>
+      <property name="text">
+       <string>脉冲序号</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>脉内调制类型</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>固定频率</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>线性调频</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>非线性调频</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>频率编码</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>二相编码</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>四项编码</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>混合调制</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>其他</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>频率(MHz)</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>脉宽(us)</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>幅度(dBm)</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>信噪比(dB)</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>完整性</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </column>
+     <item row="0" column="1">
+      <property name="text">
+       <string>脉内调制参数（依类型变化条目不同）</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>脉内调制参数（依类型变化条目项不同）</string>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string>/</string>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string>起始频率(MHz)</string>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string>中止斜率(MHz)</string>
+      </property>
+     </item>
+     <item row="3" column="3">
+      <property name="text">
+       <string>带宽(MHz)</string>
+      </property>
+     </item>
+     <item row="3" column="4">
+      <property name="text">
+       <string>斜率(含符号)(MHz/us)</string>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string>起始频率(MHz)</string>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string>中止斜率(MHz)</string>
+      </property>
+     </item>
+     <item row="4" column="3">
+      <property name="text">
+       <string>带宽(MHz)</string>
+      </property>
+     </item>
+     <item row="4" column="4">
+      <property name="text">
+       <string>线性部分斜率(含符号)(MHz/us)</string>
+      </property>
+     </item>
+     <item row="5" column="0">
+      <property name="text">
+       <string>码元宽度(us)</string>
+      </property>
+     </item>
+     <item row="5" column="1">
+      <property name="text">
+       <string>码元个数</string>
+      </property>
+     </item>
+     <item row="5" column="2">
+      <property name="text">
+       <string>码元序列(频率值MHz)</string>
+      </property>
+     </item>
+     <item row="7" column="0">
+      <property name="text">
+       <string>码元宽度(us)</string>
+      </property>
+     </item>
+     <item row="7" column="1">
+      <property name="text">
+       <string>码元个数</string>
+      </property>
+     </item>
+     <item row="7" column="2">
+      <property name="text">
+       <string>带宽(MHz)</string>
+      </property>
+     </item>
+     <item row="8" column="0">
+      <property name="text">
+       <string>频率编码码元宽度(us)</string>
+      </property>
+     </item>
+     <item row="8" column="1">
+      <property name="text">
+       <string>频率编码码元个数</string>
+      </property>
+     </item>
+     <item row="8" column="2">
+      <property name="text">
+       <string>频率编码码元序列（频率值 1）(MHz)</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

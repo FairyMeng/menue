@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SequenceFrequency</class>
+ <widget class="QMainWindow" name="SequenceFrequency">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SequenceFrequency</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>脉冲间隔-到达时间关系图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_11" native="true">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>220</y>
+      <width>391</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 228, 255);
+background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>时间-频率图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1021</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(226, 245, 255);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>660</y>
+      <width>861</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 245, 255);</string>
+    </property>
+    <widget class="QWidget" name="widget_13" native="true">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>1231</width>
+       <height>791</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Aharoni</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>下位机</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>20</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Aharoni</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>进度栏</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Aharoni</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>数据库</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>设备状态 待机</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>扫描模式 驻留</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>参数设置 中心频率9000MHz 带宽1000MHz 驻留时间</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>30</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进度栏</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_2">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>30</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>50</number>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_20" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/new/prefix1/images/xiaweiji.PNG);
+image: url(:/new/prefix1/images/xiaweiji.PNG);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_21" native="true">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/new/prefix1/images/xiaweiji.PNG);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_12" native="true">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>320</y>
+      <width>391</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 228, 255);
+background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>时间-相位差图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>40</y>
+      <width>391</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 228, 255);
+background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>10</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>中频波形图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 228, 255);
+background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>脉冲频率-到达时间关系图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_10" native="true">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>130</y>
+      <width>391</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 228, 255);
+background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>频谱图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>351</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>脉冲宽度-到达时间关系图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>351</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>脉冲幅度-到达时间关系图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>420</y>
+      <width>351</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">;
+background-color: rgb(85, 170, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>脉冲方位-到达时间关系图</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>861</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="rowCount">
+     <number>3</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>输入脉冲序号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>输出脉冲序号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>频率(MHz)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>脉宽(us)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>幅度(dBm)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>到达时间(us)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DTOA(us)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>方位(度）</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>脉内调制类型</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>信噪比(dB)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>完整性</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="widget_8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>540</y>
+      <width>851</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 252, 254);</string>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>序列精确载频</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(239, 212, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>10</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MHz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>序列载频精细分析进度栏</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_3">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>50</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>851</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>                                                                 脉冲分类列表</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>420</y>
+      <width>391</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>1</width>
+      <height>0</height>
+     </size>
+    </property>
+    <row>
+     <property name="text">
+      <string>脉冲序号</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>脉内调制类型</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>固定频率</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>线性调频</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>非线性调频</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>频率编码</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>二相编码</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>四项编码</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>混合调制（例如：频率编码十二相编码）</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>其他</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>频率(MHz)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>脉宽(us)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>幅度(dBm)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>信噪比(dB)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>完整性</string>
+     </property>
+    </column>
+    <item row="0" column="1">
+     <property name="text">
+      <string>脉内调制参数（依类型变化条目不同）</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>脉内调制参数（依类型变化条目项不同）</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>/</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>起始频率(MHz)</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>中止斜率(MHz)</string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>带宽(MHz)</string>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>斜率(含符号)(MHz/us)</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>起始频率(MHz)</string>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>中止斜率(MHz)</string>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>带宽(MHz)</string>
+     </property>
+    </item>
+    <item row="4" column="4">
+     <property name="text">
+      <string>线性部分斜率(含符号)(MHz/us)</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>码元宽度(us)</string>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>码元个数</string>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>码元序列(频率值MHz)</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>码元宽度(us)</string>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>码元个数</string>
+     </property>
+    </item>
+    <item row="7" column="2">
+     <property name="text">
+      <string>带宽(MHz)</string>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>频率编码码元宽度(us)</string>
+     </property>
+    </item>
+    <item row="8" column="1">
+     <property name="text">
+      <string>频率编码码元个数</string>
+     </property>
+    </item>
+    <item row="8" column="2">
+     <property name="text">
+      <string>频率编码码元序列（频率值 1）(MHz)</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>997</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

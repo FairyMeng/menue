@@ -1,0 +1,132 @@
+﻿/********QWidget  sytle**********/
+
+QWidget#MainWindow{
+background:#373737;
+}
+
+
+/********QTextBrowser  sytle**********/
+
+QTextBrowser#textBrowser,QTextBrowser#textBrowser_5{
+background:#808080;
+}
+/***********QLabel   style*********/
+QLabel{
+/*color:#87CEEB;*/
+color:#F8F8FF;
+}
+
+
+
+QLineEdit{
+border-top: 1px solid #33FFFF;
+background:#808080;
+color:#000000;
+
+}
+QPushButton#pushButton_quickLoadFile{
+background:#808080;
+}
+QSpinBox{
+border-top: 1px solid #33FFFF;
+background:#808080;
+color:#000000;
+}
+QDoubleSpinBox{
+background:#808080;
+border-top: 1px solid #33FFFF;
+color:#000000;
+}
+
+
+
+
+/********QTabWidget  sytle**********/
+QTabBar::tab{width:90}
+QTabWidget::pane { /* The tab widget frame */
+     border-top: 2px solid #C2C7CB;
+     background: transparent;
+ }
+
+ QTabWidget::tab-bar {
+
+     left: 40px; /* move to the right by 5px */
+ }
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+ QTabBar::tab {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #373737, stop: 0.4 #303030,
+                                 stop: 0.5 #505050, stop: 1.0 #303030);
+     color:#F8F8FF;
+     border: 2px solid #373737;
+     border-bottom-color: #373737; /* same as the pane color */
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     min-width: 8ex;
+     padding: 2px;
+ }
+
+ QTabBar::tab:selected, QTabBar::tab:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #808080, stop: 0.4 #686868,
+                                 stop: 0.5 #757575, stop: 1.0 #606060);
+ }
+
+ QTabBar::tab:selected {
+     border-color: #373737;
+     border-bottom-color: #454545; /* same as pane color */
+ }
+
+ QTabBar::tab:!selected {
+     margin-top: 2px; /* make non-selected tabs look smaller */
+ }
+
+/********QToolButton  sytle**********/
+QToolButton{
+color:rgb(255, 255, 255);
+border-style:solid;
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+/*background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(230, 230, 230, 206), stop:0.40 rgba(200, 200, 200, 80), stop:0.50 rgba(150, 150, 150, 80), stop:0.65 rgba(130, 130, 130, 156), stop:0.85 rgba(90, 90, 90, 80), stop:1 rgba(55, 55, 55, 0));*/
+background:#8B8989;
+border:1px;
+border-radius:5px;padding:2px 4px;/*border-radius控制圆角大小*/
+}
+QToolButton:hover{  /*鼠标放上后*/
+color:rgb(255, 255, 255);
+border-style:solid;
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),
+                            stop: 0.3 rgb(160,160,160),
+                              stop: 1 rgb(120,120,120));
+border:1px;
+border-radius:5px;padding:2px 4px;
+}
+QToolButton:pressed{ /*按下按钮后*/
+color:rgb(255, 255, 255);
+border-style:solid;
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),
+                            stop: 0.3 rgb(190,190,190),
+                              stop: 1 rgb(160,160,160));
+border:1px;
+border-radius:5px;padding:2px 4px;
+}
+QToolButton:checked{    /*选中后*/
+color:rgb(255, 255, 255);
+border-style:solid;
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(225,255,255),
+                             stop: 1 rgb(225,255,255));
+border:1px;
+border-radius:5px;padding:2px 4px;
+}
+
+QPushButton{
+color:#F8F8FF
+}
